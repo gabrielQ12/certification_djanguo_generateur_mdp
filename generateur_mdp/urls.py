@@ -19,5 +19,5 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.home),
-    path('test/', views.test)
+    path('motdepasse/', views.motdepasse)
 ]

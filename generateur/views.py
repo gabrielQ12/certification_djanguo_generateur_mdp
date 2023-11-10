@@ -4,8 +4,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse('bonjour')
+    return render (request, 'generateur/home.html', {'mdp':'bonjour35'})
 
 
-def test(request):
-    return HttpResponse('Votre page test')
+def motdepasse(request):
+     return render (request, 'generateur/motdepasse.html')
