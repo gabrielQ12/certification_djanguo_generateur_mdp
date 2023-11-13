@@ -18,6 +18,7 @@ from generateur import views
 from django.urls import path
 
 urlpatterns = [
-    path('', views.home),
+    path('', views.home, name='home'),
     path('motdepasse/', views.motdepasse, name='motdepasse'),
+    path('apropos',views.apropos, name='apropos'),
 ]
